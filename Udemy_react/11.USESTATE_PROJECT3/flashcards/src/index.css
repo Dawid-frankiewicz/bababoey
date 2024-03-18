@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+.flash {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.element {
+  flex: 1;
+  min-width: calc((25% - 10px));
+  max-width: calc((25% - 10px));
+  height: 10rem;
+  background-color: red;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.elementActive {
+  flex: 1;
+  min-width: calc((25% - 10px));
+  max-width: calc((25% - 10px));
+  height: 10rem;
+  background-color: rgb(255, 208, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}

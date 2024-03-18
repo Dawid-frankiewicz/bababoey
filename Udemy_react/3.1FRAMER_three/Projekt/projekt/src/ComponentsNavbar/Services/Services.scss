@@ -1,0 +1,162 @@
+@import "../../app.scss";
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  background: linear-gradient(180deg, #0c0c1d, #1d1d52);
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+
+  .titleContainer {
+    // position: absolute;
+    // top: 50px;
+    // right: 0;
+    // display: flex;
+    // flex-direction: row;
+    // opacity: 0.5;
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    hr {
+      border: none;
+      border-top: 1px solid gray;
+      width: 500px;
+      @include mobile {
+        width: 50px;
+      }
+    }
+    p {
+      text-align: right;
+      color: gray;
+      @include mobile {
+        padding-top: 8px;
+        font-size: 0.5rem;
+      }
+    }
+  }
+  .textContainer {
+    font-size: 50px;
+    font-weight: 100;
+    flex: 2;
+
+    align-items: center;
+
+    @include mobile {
+      font-size: 30px;
+      flex: 1;
+    }
+
+    img {
+      height: 60px;
+      width: 150px;
+      border-radius: 40px;
+      object-fit: cover; //zastapienie background cover // zajmuje dostepna powierzchnie
+      @include mobile {
+        height: 30px;
+        width: 75px;
+        border-radius: 20px;
+      }
+    }
+    button {
+      background-color: rgb(255, 167, 4);
+      width: 150px;
+      height: 50px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      @include mobile {
+        height: 25px;
+        width: 75px;
+        border-radius: 20px;
+        font-size: 8px;
+      }
+    }
+    #onHover {
+      font-weight: 800;
+    }
+    #onHover:hover {
+      color: rgb(255, 167, 4);
+    }
+  }
+
+  .listContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: rows;
+    max-width: 1366px;
+    height: 300px;
+    padding-inline: 20px;
+    @include mobile {
+      height: 400px;
+      padding-inline: 10px;
+      flex-direction: column;
+    }
+
+    .blok {
+      border: 2px solid rgba(255, 255, 255, 0.2);
+
+      background-color: transparent;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: left;
+      gap: 20px;
+      font-weight: 300;
+      margin-bottom: 10px;
+
+      @include mobile {
+        height: 75px;
+        width: 200px;
+        gap: 5px;
+        padding: 10px;
+        align-items: center;
+        border: none;
+      }
+      h3 {
+        font-weight: 700;
+        @include mobile {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+      p {
+        @include mobile {
+          display: none;
+        }
+      }
+      button {
+        width: 100%;
+        background-color: rgb(255, 167, 4);
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        @include mobile {
+          background-color: transparent;
+          border: 1px solid orange;
+          color: orange;
+          padding: 5px;
+        }
+      }
+    }
+    .blok:hover {
+      background-color: lightgray;
+      color: black;
+      @include mobile {
+        background-color: transparent;
+        color: white;
+      }
+    }
+  }
+}
+
+.listContainer .blok:not(:last-child) {
+  border-right: none;
+}

@@ -1,0 +1,56 @@
+  0
+LAYERSTATEDICTIONARY
+  0
+LAYERSTATE
+  1
+proba
+ 91
+2047
+301
+
+290
+0
+302
+0
+  8
+dsad
+ 90
+8
+ 62
+7
+370
+-3
+  6
+ACAD_ISO05W100
+  2
+Color_7
+440
+0
+  8
+[rpba
+ 90
+8
+ 62
+61
+370
+-3
+  6
+Continuous
+  2
+Color_61
+440
+0
+  8
+0
+ 90
+8
+ 62
+7
+370
+-3
+  6
+Continuous
+  2
+Color_7
+440
+0
